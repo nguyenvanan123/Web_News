@@ -56,6 +56,7 @@ public class UserDAO implements IUserDAO{
         }
     }
 
+
     private void printSQLException(SQLException ex) {
         for (Throwable e : ex) {
             if (e instanceof SQLException) {
