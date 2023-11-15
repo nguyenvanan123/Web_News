@@ -132,6 +132,7 @@ CallableStatement cs = connection.prepareCall( " select * from createposts where
     cs.setString(1,"%" + keyword + "%");
     cs.setString(2,"%" + keyword + "%");
     ResultSet rs = cs.executeQuery();
+
     while (rs.next()){
         int id = rs.getInt("id");
         String title = rs.getString("title");
