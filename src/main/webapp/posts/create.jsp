@@ -80,23 +80,30 @@
 </script>
 <h1>Post your article</h1>
 <%--action="/users"--%>
-<form  method="post" action="/users?action=create">
+<form  method="post" action="/posts?action=create">
     <label for="title">Title:</label>
-    <input type="text" id="title" name="title">
+    <input type="text" id="title" name="title" required>
 
 
 
 
 
     <label for="content">Content:</label>
-    <textarea id="content" name="content" ></textarea>
+    <textarea id="content" name="content" required></textarea>
 
-    <%--    <label for="timestamp">Thời gian đăng:</label>--%>
-    <%--    <input type="text" id="timestamp" name="timestamp" readonly>--%>
+    <label for="timestamp">Time:</label>
+    <input type="text" id="timestamp" name="timestamp" readonly>
 
 
 
-    <label for=""></label>
+    <label for="avatar">Avatar:</label>
+    <textarea id="avatar" name="avatar" required></textarea>
+    <%--    <input type="text" id="avatar" name="avatar" readonly>--%>
+
+
+    <label for="shortdescription">Shortdescript</label>
+    <textarea id="shortdescription" name="shortdescription" required></textarea>
+
     <label for="access">Access:</label>
     <%--    <td>${post.accessAllowed}</td>--%>
     <select id="access" name="access">
